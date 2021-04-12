@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------
+ Headings
+----------------------------------------------------------------*/
+.heading1{
+    font-size: $f32;
+    font-weight: $font-weight-700;
+    margin-bottom: 0;
+    @include position(relative);
+    padding-bottom: 20px;
+    @include media-mobile {
+        font-size: $f40;
+    }
+    &::after{
+        @include position(absolute, $bottom:0,$left:0);
+        content: "";
+        margin: auto;
+        background: $secondary-color;
+        width: 206px;
+        height: 2px;
+    }
+    @include media-md{
+     font-size: $f18;
+    }
+}
+.heading2{
+    font-size: $f32;
+    font-weight: $font-weight-700;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    @include position(relative);
+    &::after{
+        @include position(absolute, $bottom:0,$left:0,$right:0);
+        content: "";
+        margin: auto;
+        background: $secondary-color;
+        width: 206px;
+        height: 2px;
+    }
+    @include media-md{
+        font-size: $f18;
+       }
+}
+.heading3{
+    font-size: $f32;
+    font-weight: $font-weight-700;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    @include media-md{
+        font-size: $f18;
+       }
+}

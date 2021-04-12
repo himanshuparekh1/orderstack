@@ -1,0 +1,76 @@
+/*--------------------------------------------------------------
+ Base
+----------------------------------------------------------------*/
+html{
+scroll-behavior: smooth;
+}
+body {
+    font-family: $font-primary;
+    font-weight: 400;
+    color: $black;
+    font-size: 13px;
+    scroll-behavior: smooth;
+    letter-spacing: 1px;
+  }
+  *, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  a {
+    @include transition(all 0.3s ease 0s);
+    &:hover {
+      text-decoration: none;
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  p {
+    margin: 0;
+  }
+
+  .container{
+    max-width: 1620px;
+    width: 100%;
+  }
+  .box-shadow{
+    @include box-shadow(0 0 20px rgba(0,0,0,0.24));
+  }
+ .border-radius{
+  @include border-radius(16px);
+ }
+  .w-100{
+    width: 100%;
+  }
+
+  @mixin media-lg {
+    @media screen and (max-width : 1200px) {
+      @content;
+    }
+  }
+  @mixin media-md {
+    @media screen and (max-width : 992px) {
+      @content;
+    }
+  }
+  @mixin media-desktop {
+    @media screen and (min-width : 1025px) {
+      @content;
+    }
+  }
+  
+  @mixin media-mobile {
+    @media screen and (max-width : 1024px) {
+      @content;
+    }
+  }

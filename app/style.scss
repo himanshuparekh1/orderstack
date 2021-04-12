@@ -1,0 +1,15 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+/* Variables */
+@import "../app/scss/variables";
+/* mixin */
+@import "../app/scss/vendors/mixy-sass/mixy";
+/* Base */
+@import "../app/scss/base/base";
+@import "../app/scss/base/header/header";
+@import "../app/scss/base/footer/footer";
+/* Components */
+@import "../app/scss/components/button";
+@import "../app/scss/components/form-element";
+@import "../app/scss/components/heading";
+/* Theme */
+@import "../app/scss/theme/theme";
